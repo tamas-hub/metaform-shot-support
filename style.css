@@ -1,0 +1,22 @@
+:root{color-scheme:light dark;--paper:#fafaf8;--ink:#181817;--soft:#55554f;--line:#d6d6cf;--accent:#a73424;font:100%/1.8 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink)}
+.bar,main{max-width:52rem;margin:auto;padding-inline:clamp(1.2rem,5vw,3rem)}
+header{border-bottom:1px solid var(--line)}
+header .bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding-block:1rem}
+.brand{font-size:1.2rem;font-weight:750;letter-spacing:-.045em;color:var(--ink);text-decoration:none}
+nav{display:flex;gap:1.1rem;flex-wrap:wrap}
+nav a{font-size:.87rem;color:var(--soft);text-decoration:none;padding-block:.25rem}
+nav a[aria-current]{color:var(--ink);box-shadow:inset 0 -2px var(--accent)}
+main{padding-block:clamp(2.6rem,8vw,6rem) 4rem}
+h1{font-size:clamp(2rem,6vw,3.6rem);letter-spacing:-.045em;line-height:1.2;margin:0;text-wrap:balance}
+.intro{margin:1.4rem 0 2.5rem;color:var(--soft);font-size:1.05rem}
+section{border-top:1px solid var(--line);padding-top:1.1rem;margin-top:2rem}
+h2{font-size:1.22rem;margin:0 0 .8rem}p{margin:.7rem 0}
+summary{cursor:pointer;font-weight:650;padding:.8rem 0}
+details+details{border-top:1px solid var(--line)}
+details p{margin:0 0 1.2rem;color:var(--soft)}
+a{color:var(--accent);text-underline-offset:.18em;overflow-wrap:anywhere}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+footer{border-top:1px solid var(--line);color:var(--soft);font-size:.85rem;padding-block:1rem}
+@media(prefers-color-scheme:dark){:root{--paper:#171817;--ink:#f1f1ed;--soft:#bcbcb5;--line:#42423c;--accent:#ff9987}}
